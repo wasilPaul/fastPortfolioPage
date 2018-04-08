@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/navSection.css">
     <link rel="stylesheet" href="./styles/heroSection.css">
     <link rel="stylesheet" href="./styles/projectStyle.css">
+    <link rel="stylesheet" href="./styles/about_meSection.css">
 
 
     <title>My Portfolio</title>
@@ -84,14 +85,39 @@
             <div class="col-12">
 
 
-
-                </div>
             </div>
         </section>
         <!-- PROJECTS END -->
 
         <!-- ABOUT START -->
-        <section class="about_me">
+        <section class="row about_me">
+            <div class="col-12 col-lg-6 about_me-side-l">
+
+            </div>
+            <div class="col-12 col-lg-6 about_me-side-r">
+                <div class="about_me-form">
+                    <h5>I WOULD LIKE TO HEAR <span class="font-weight-bold">FROM YOU</span></h5>
+                    <p> Internship proposal, freelance inquiry or even a coffee</p>
+                    <form action="https://emaillabs-sender.herokuapp.com/" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="email" class="form-control" id="name"
+                                   placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email"
+                                   placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Example textarea</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                                      placeholder="Write something in there..." required maxlength="500"></textarea>
+                        </div>
+                        <a class="form_send" href="#"> <span> SEND MESSAGE </span></a>
+                    </form>
+                </div>
+            </div>
 
         </section>
         <!-- ABOUT END -->
