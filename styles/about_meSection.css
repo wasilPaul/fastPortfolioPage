@@ -8,16 +8,20 @@
 /* left side*/
 .about_me-side-l {
     background: #000;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #ff313c;
 }
-
-
 
 /* right side */
 .about_me-side-r {
     position: relative;
-    padding: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-top: 10%;
     color: #000000;
+    background: #ff313c;
 }
 
 .about_me-form {
@@ -28,13 +32,12 @@
 .form-control {
     border: 1px black solid;
     border-radius: 0;
-    background: #bd2130;
     color: black;
     font-size: 1em;
 }
 
 .form_send {
-    padding: 3%;
+    padding: 2% 3% 2% 3%;
     border: solid black 1px;
     text-decoration: none;
     color: black;
@@ -50,12 +53,12 @@
 /* this is just yet not accepted effect!*/
 .form-control::placeholder {
     color: black;
-    background: #bd2130;
+    background: #ff313c;
 }
 
 .form-control:placeholder-shown {
     color: black;
-    background: #bd2130;
+    background: #ff313c;
 }
 
 textarea {
