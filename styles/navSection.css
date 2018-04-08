@@ -1,0 +1,8 @@
+.nav-brand--style {
+    color: #d32e38;
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-weight: bold;
+    font-size: 3rem;
+    position:absolute;
+    transform: skewY(-10deg);
+}
