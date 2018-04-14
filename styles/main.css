@@ -21,3 +21,9 @@ a own padding and margin if necessary*/
 .navbar-nav > a {
     color: #000000;
 }
+
+body {
+    background: url('../img/smoke-2437886_1920.jpg') center no-repeat;
+    background-size: cover;
+
+}

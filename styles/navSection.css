@@ -6,3 +6,7 @@
     position:absolute;
     transform: skewY(-10deg);
 }
+
+i {
+    color: #ebebeb;
+}
