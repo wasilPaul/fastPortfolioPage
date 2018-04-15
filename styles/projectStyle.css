@@ -1,22 +1,84 @@
-.projects {
-    height: 100vh;
+#projects {
+    min-height: 100vh;
     width: 100%;
 
+}
+
+.project_head {
+    margin-top: 10vh;
+    color: white;
+    padding-bottom: 5vh;
+}
+.project_sec_down {
+    position: relative;
+}
+
+.place1, .place2, .place3 {
+    position: relative;
+    /*border: 2px solid red;*/
+    min-height: 50vh;
+
+    padding-left: 3%;
+    paddin-right:3%;
+    padding-top: 3%;
 }
 
 .place1 {
 
 }
 
-.place2 {
-
+.place_card {
+    width: 70.2%;
+    position:absolute;
+    border: 2px solid #ebebeb;
+    border-radius: 10px;
+    min-height: 90%;
+    color: #ebebeb;
 }
 
-.project_sec_up {
-
+.card1 {
+    margin-left: 20vw;
+    background: rgba(0, 0 ,0, 0.9);
+    transform: rotate(-20deg);
+    resize: both;
 }
 
-.project_sec_down {
-
+.place_card:hover{
+    z-index:10;
+    transform: rotate(0);
 }
 
+.card2 {
+    margin-top: 5vh;
+    background: rgba(0, 0 ,0, 0.9);
+    transform: rotate(-5deg);
+}
+
+.card3 {
+    margin-top: 20vh;
+    background: rgba(0, 0 ,0, 0.9);
+    margin-left: -20vw;
+    transform: rotate(15deg);
+}
+
+@media only screen and (max-width: 991px){
+    .card1{
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        transform: rotate(-5deg);
+    }
+    .card2{
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        transform: rotate(5deg);
+    }
+    .card3{
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        transform: rotate(-5deg);
+    }
+
+}

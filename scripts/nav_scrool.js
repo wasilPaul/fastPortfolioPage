@@ -10,14 +10,14 @@ $(document).ready(function () {
         var offset = 0;
 
         $('html, body').animate({
-            scrollTop: $(".about_me").offset().top + offset
+            scrollTop: $("#about_me").offset().top + offset
         }, 2000);
     });
     $(".project").click(function () {
         var offset = 0;
 
         $('html, body').animate({
-            scrollTop: $(".projects").offset().top + offset
+            scrollTop: $("#projects").offset().top + offset
         }, 2000);
     });
 });

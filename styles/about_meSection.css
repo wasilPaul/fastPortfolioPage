@@ -1,4 +1,4 @@
-.about_me {
+#about_me {
     min-height: 100vh;
     width: 100%;
 
@@ -12,6 +12,18 @@
     padding-left: 10%;
     padding-right: 10%;
     color: #ff313c;
+}
+
+.about_me-name {
+    color: #d32e38;
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-weight: bold;
+    font-size: 3rem;
+    transform: skewY(-5deg);
+    padding-bottom: 5%;
+    margin-top: -10%;
+    margin-left: -2%;
+    display: none;
 }
 
 /* right side */
@@ -51,8 +63,6 @@
     text-decoration: none;
 }
 
-
-
 /* this is just yet not accepted effect!*/
 .form-control::placeholder {
     color: black;
@@ -68,3 +78,8 @@ textarea {
     resize: none;
 }
 
+@media only screen and (max-width: 991px) {
+    .about_me-name {
+        display: block;
+    }
+}

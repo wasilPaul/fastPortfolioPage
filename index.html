@@ -26,14 +26,14 @@
         <a class="navbar-brand" href="#"><span class=" ml-5 nav-brand--style"> Paweł Wasil </span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"><span class="nav-brand--main_back"><p class="nav-brand--main">Pw</p></span></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link ml-auto active" href="#"><i class="flaticon-linkedin-button"></i></a>
                 <a class="nav-item nav-link ml-auto" href="#"><i class="flaticon-github-big-logo"></i></a>
-                <a class="nav-item nav-link ml-auto" href="#"><i class="contact flaticon-envelope"></i></a>
-                <a class="nav-item nav-link ml-auto" href="#"><i class="project flaticon-gear"></i></a>
+                <a class="nav-item nav-link ml-auto" href="#about_me"><i class="contact flaticon-envelope"></i></a>
+                <a class="nav-item nav-link ml-auto" href="#projects"><i class="project flaticon-gear"></i></a>
             </div>
         </div>
     </nav>
@@ -87,24 +87,34 @@
         <!-- HERO END -->
 
         <!-- PROJECTS START -->
-        <section class="projects row">
+        <section id="projects" class="row">
             <div class="col-12">
 
                 <div class="row project_sec_up">
-                    <div class="col-12 col-lg-6 place1">
-                        <p class="text-center">nothing yet... but soon ;)</p>
+                    <div class="col-12">
+                        <h3 class="text-center project_head">My <span class="hero_decoration ">Portfolio</span></h3>
                     </div>
-                    <div class="col-12 col-lg-6 place2">
-                        <p class="text-center"></p>
-                    </div>
+
+
                 </div>
                 <div class="row project_sec_down">
-                    <div class="col-12 col-lg-6 place2">
-                        <p class="text-center"></p>
+                    <div class="col-12 col-lg-4 place1">
+                        <div class="place_card card1">
+                            <p class="text-center something">Applications</p>
+                        </div>
+
                     </div>
-                    <div class="col-12 col-lg-6 place1">
-                        <p class="text-center"></p>
+                    <div class="col-12 col-lg-4 place2">
+                        <div class="place_card card2">
+                            <p class="text-center something">Design</p>
+                        </div>
                     </div>
+                    <div class="col-12 col-lg-4 place3">
+                        <div class="place_card card3">
+                            <p class="text-center something">Websites</p>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
@@ -112,8 +122,9 @@
         <!-- PROJECTS END -->
 
         <!-- ABOUT START -->
-        <section class="row about_me">
+        <section id="about_me" class="row">
             <div class="col-12 col-lg-6 about_me-side-l">
+                <h3 class="about_me-name">Pawel Wasil</h3>
                 <p>Starting front-end developer</p>
                 <h2>About Me</h2>
                 <p>Hello I’m a 33-year-old. Currently learning at infoShare Academy.
@@ -135,7 +146,7 @@
                                    placeholder="Name">
                         </div>
                         <div class="form-group">
-                            <label for="email" >Email address</label>
+                            <label for="email">Email address</label>
                             <input type="email" class="form-control" id="email" name="emails[]" placeholder="Email">
                         </div>
                         <input type="hidden" name="subject" value="Title">
@@ -146,8 +157,9 @@
                         </div>
                         <input type="hidden" name="from" value="wasil.paul@gmail.com">
                         <input type="hidden" name="fromName" value="Portfolio Page">
-                        <input type="hidden" name="redirect" value="https://wasilpaul.github.io/fastPortfolioPage/index.html">
-                        <a  type="submit" class="button btn form_send" href="#"> <span> SEND MESSAGE </span></a>
+                        <input type="hidden" name="redirect"
+                               value="https://wasilpaul.github.io/fastPortfolioPage/index.html">
+                        <a type="submit" class="button btn form_send" href="#"> <span> SEND MESSAGE </span></a>
                     </form>
                 </div>
             </div>

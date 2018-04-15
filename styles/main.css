@@ -25,5 +25,7 @@ a own padding and margin if necessary*/
 body {
     background: url('../img/smoke-2437886_1920.jpg') center no-repeat;
     background-size: cover;
+    margin: 0;
+    padding: 0;
 
 }
