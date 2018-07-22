@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: rgb(47, 44, 38);
+    --secondary-color: rgb(243, 72, 91);
+    --font-color: rgb(250, 246, 244);
+}
+body {
+    background: url('../img/smoke-2437886_1920.jpg') center no-repeat;
+    background-size: cover;
+}
+
+main {
+    min-height: 100vh;
+}
+
+/* NAVIGATION  */
+nav {
+    position: fixed;
+    width: 100%;
+}
+.nav-menu {
+    text-align: left;
+}
+.nav-toggle {
+    display: none;
+}
+
+#toggle {
+    display: none;
+}
+
+.nav-items {
+    text-decoration: none;
+    color: var(--font-color);  
+}
+.nav-items:hover {
+    color: var(--secondary-color);
+}
+
+@media only screen and (max-width: 480px){
+    .nav-toggle {
+        display: block;
+        font-size: 26px;
+        color: var(--secondary-color);
+        cursor: pointer;
+        margin-left: 90%;
+    }
+    .nav-menu_box {
+        display: none;
+    }
+    .nav-items {
+        text-decoration: none;
+        text-align: center;
+        color: var(--font-color);
+        display: block;
+    }
+
+    #toggle:checked + .nav-menu_box {
+        display: block;
+    }
+}
+
+
