@@ -7,6 +7,7 @@
     --primary-color: rgb(47, 44, 38);
     --secondary-color: rgb(243, 72, 91);
     --font-color: rgb(250, 246, 244);
+    --primary-background-color: rgba(0, 0, 0, 0.7);
 }
 body {
     background: url('../img/smoke-2437886_1920.jpg') center no-repeat;
@@ -21,6 +22,8 @@ main {
 nav {
     position: fixed;
     width: 100%;
+    background: var(--primary-background-color)
+
 }
 .nav-menu {
     text-align: left;
@@ -32,10 +35,21 @@ nav {
 #toggle {
     display: none;
 }
-
+.nav-menu_box {
+    margin-left: auto;
+    max-width: 80%;
+    text-align: right;
+}
 .nav-items {
-    text-decoration: none;
-    color: var(--font-color);  
+    text-decoration: none;  
+    color: var(--font-color); 
+    display: block;
+    float: left;
+    width: 20%;
+    border: 1px var(--secondary-color) solid;
+    text-align: center;
+    padding: 1%;
+    fill: var(--font-color)
 }
 .nav-items:hover {
     color: var(--secondary-color);
