@@ -7,18 +7,30 @@
     --primary-color: rgb(47, 44, 38);
     --secondary-color: rgb(243, 72, 91);
     --font-color: rgb(250, 246, 244);
-    --primary-background-color: rgba(0, 0, 0, 0.7);
+    --primary-background-color: rgba(0, 0, 0, 0.2);
 }
 body {
     background: url('../img/smoke-2437886_1920.jpg') center no-repeat;
     background-size: cover;
 }
 
-main {
+.hero {
     min-height: 100vh;
+}
+.about_me {
+    min-height: 100vh;
+    background: rgba(243, 72, 91, 0.2)
 }
 
 /* NAVIGATION  */
+.brand {
+    float: left;
+    padding: auto;
+    width: 20%;
+    padding: 1em 0 0 2em;
+    color: var(--secondary-color)
+}
+
 nav {
     position: fixed;
     width: 100%;
@@ -37,7 +49,7 @@ nav {
 }
 .nav-menu_box {
     margin-left: auto;
-    max-width: 80%;
+    max-width: 50%;
     text-align: right;
 }
 .nav-items {
@@ -46,11 +58,16 @@ nav {
     display: block;
     float: left;
     width: 20%;
-    border: 1px var(--secondary-color) solid;
+    /* border: 1px var(--secondary-color) solid; */
     text-align: center;
     padding: 1%;
     fill: var(--font-color)
 }
+
+.nav-items_description {
+    /* display: none; */
+}
+
 .nav-items:hover {
     color: var(--secondary-color);
 }
