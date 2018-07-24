@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
     --primary-color: rgb(47, 44, 38);
     --secondary-color: rgb(243, 72, 91);
     --font-color: rgb(250, 246, 244);
     --primary-background-color: rgba(0, 0, 0, 0.2);
 }
+
 body {
     background: url('../img/smoke-2437886_1920.jpg') center no-repeat;
     background-size: cover;
@@ -17,13 +19,21 @@ body {
 .hero {
     min-height: 100vh;
 }
+
 .about_me {
     min-height: 100vh;
     background: rgba(243, 72, 91, 0.2)
 }
 
 /* NAVIGATION  */
-.brand {
+
+.nav {
+    position: fixed;
+    width: 100%;
+    background: var(--primary-background-color)
+}
+
+.nav-brand {
     float: left;
     padding: auto;
     width: 20%;
@@ -31,30 +41,27 @@ body {
     color: var(--secondary-color)
 }
 
-nav {
-    position: fixed;
-    width: 100%;
-    background: var(--primary-background-color)
-
-}
 .nav-menu {
     text-align: left;
 }
-.nav-toggle {
+
+.nav-menu__toggle {
     display: none;
 }
 
-#toggle {
+#nav-menu__toggle-action {
     display: none;
 }
-.nav-menu_box {
+
+.nav-menu-box {
     margin-left: auto;
     max-width: 50%;
     text-align: right;
 }
-.nav-items {
-    text-decoration: none;  
-    color: var(--font-color); 
+
+.nav-menu-items {
+    text-decoration: none;
+    color: var(--font-color);
     display: block;
     float: left;
     width: 20%;
@@ -64,35 +71,32 @@ nav {
     fill: var(--font-color)
 }
 
-.nav-items_description {
+.nav-menu-items_description {
     /* display: none; */
 }
 
-.nav-items:hover {
+.nav-menu-items:hover {
     color: var(--secondary-color);
 }
 
-@media only screen and (max-width: 480px){
-    .nav-toggle {
+@media only screen and (max-width: 480px) {
+    .nav-menu__toggle {
         display: block;
         font-size: 26px;
         color: var(--secondary-color);
         cursor: pointer;
         margin-left: 90%;
     }
-    .nav-menu_box {
+    .nav-menu-box {
         display: none;
     }
-    .nav-items {
+    .nav-menu-items {
         text-decoration: none;
         text-align: center;
         color: var(--font-color);
         display: block;
     }
-
-    #toggle:checked + .nav-menu_box {
+    #nav-menu__toggle-action:checked+.nav-menu-box {
         display: block;
     }
 }
-
-
