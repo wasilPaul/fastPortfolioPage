@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 23/07/2018 14:43
+  	Creation date: 24/07/2018 12:49
   	*/
 
 @font-face {
@@ -24,18 +24,22 @@
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
   font-family: Flaticon;
-        font-size: 2.5em;
+        font-size: 3em;
 font-style: normal;
-margin: auto;
 
 }
 
-.flaticon-think:before { content: "\f100"; }
-.flaticon-brainstorm:before { content: "\f101"; }
-.flaticon-idea:before { content: "\f102"; }
-.flaticon-support:before { content: "\f103"; }
-.flaticon-linkedin:before { content: "\f104"; }
-.flaticon-home:before { content: "\f105"; }
-.flaticon-mail:before { content: "\f106"; }
-.flaticon-phone:before { content: "\f107"; }
-.flaticon-github:before { content: "\f108"; }
+.flaticon-man:before { content: "\f100"; }
+.flaticon-head:before { content: "\f101"; }
+.flaticon-gear:before { content: "\f102"; }
+.flaticon-code:before { content: "\f103"; }
+.flaticon-data-management-interface-symbol-with-gears-and-binary-code-numbers:before { content: "\f104"; }
+.flaticon-paint-palette:before { content: "\f105"; }
+.flaticon-paint:before { content: "\f106"; }
+.flaticon-github-big-logo:before { content: "\f107"; }
+.flaticon-linkedin-button:before { content: "\f108"; }
+.flaticon-support:before { content: "\f109"; }
+.flaticon-linkedin:before { content: "\f10a"; }
+.flaticon-mail:before { content: "\f10b"; }
+.flaticon-phone:before { content: "\f10c"; }
+.flaticon-github:before { content: "\f10d"; }
